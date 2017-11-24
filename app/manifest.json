@@ -1,6 +1,6 @@
 {
-  "short_name": "QR Scanner",
-  "name": "QR Code Scanner",
+  "short_name": "SubeBus",
+  "name": "SUBEBUS",
   "description": "QR code scanner progressive web application",
   "display": "standalone",
   "orientation": "portrait",

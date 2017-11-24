@@ -31,36 +31,33 @@
           </svg>
         </span>
       </header>
-      
-      <main class="app__layout-content">
-        <video autoplay></video>
-        
-        <!-- Dialog  -->
-        <div class="app__dialog app__dialog--hide">
-          <div class="app__dialog-content">
-            <h5>QR Code</h5>
-            <input type="text" id="result">
+
+  <div class="contenedor-formulario">
+    <div class="wrap">
+      <form action="" class="formulario" name="formulario_registro" method="get">
+        <div>
+          <div class="input-group">
+            <input type="text" id="nombre" name="nombre">
+            <label class="label" for="nombre">Número:</label>
           </div>
-          <div class="app__dialog-actions">
-            <button type="button" class="app__dialog-open">Abrir</button>
-            <button type="button" class="app__dialog-close">Cerrar</button>
+          <div class="input-group">
+            <input type="text" id="nombre" name="correo">
+            <label class="label" for="correo">Nombre:</label>
           </div>
+          <input type="submit" id="btn-submit" value="Entrar" onclick="qrscan()">
         </div>
-
-        <div class="app__dialog-overlay app__dialog--hide"></div>
-
-        <!-- Snackbar -->
-        <div class="app__snackbar"></div>
-      </main>
+      </form>
     </div>
-    <div class="app__overlay">
-      <div class="app__overlay-frame"></div>
-      <!-- Scanner animation -->
-      <div class="custom-scanner"></div>
-      <div class="app__help-text">Enfoca la cámara al código QR</div>
-      <div class="app__select-photos">Selecciona desde fotos</div>
-    </div>
-    
+  </div>
+      
+  <script>
+      function qrscan() {
+          window.open("qrscan.html","_self");
+      }
+  </script>
+
+  <script src="js/formulario.js"></script>
+
     <script>
       if (location.hostname !== "localhost") {
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
